@@ -48,7 +48,7 @@ abstract class AbstractConcurrentList<E> implements ConcurrentList<E> {
         }
 
         Node() {
-
+            lock = new ReentrantLock();
         }
     }
 }
