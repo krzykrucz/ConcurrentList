@@ -8,7 +8,7 @@ import java.util.concurrent.locks.ReentrantLock;
  */
 abstract class AbstractConcurrentList<E> implements ConcurrentList<E> {
 
-    int size = 0;
+    int size = 0; //comment
     Node<E> guard = new Node<>();
 
     @Override
@@ -17,7 +17,7 @@ abstract class AbstractConcurrentList<E> implements ConcurrentList<E> {
     }
 
     @Override
-    public boolean isEmpty() {
+    public Boolean isEmpty() {
         return size == 0;
     }
 
