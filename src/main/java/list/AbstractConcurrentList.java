@@ -9,7 +9,6 @@ import java.util.concurrent.locks.ReentrantLock;
 abstract class AbstractConcurrentList<E> implements ConcurrentList<E> {
 
     int size = 0;
-
     Node<E> guard = new Node<>();
 
     @Override
